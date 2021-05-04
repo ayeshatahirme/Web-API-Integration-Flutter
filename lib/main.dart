@@ -65,7 +65,7 @@ Widget build(BuildContext context) {
                       SizedBox(
                         height: 25,
                       ),
-                      Text('Add and list first name, last name, gender, email and phone number.',
+                      Text('Add and view first name, last name, gender, email and phone number.',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 16,

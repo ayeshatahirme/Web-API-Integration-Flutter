@@ -18,15 +18,15 @@ class _AddRecordState extends State<AddRecord> {
   final phoneController = TextEditingController();
 
 
-  Future sendSubjectsData() async {
+  Future sendRecordData() async {
     if (fnameController.text.length > 0 && 
     lnameController.text.length > 0 &&
     emailController.text.length > 0 &&
     phoneController.text.length > 0) {
       var response = await http.post(Uri.parse('https://pcc.edu.pk/ws/create/cms_providers.php'),
           body: jsonEncode({
-            "fname": fnameController.text,
-            "lname": lnameController.text,
+            "firstName": fnameController.text,
+            "lastName": lnameController.text,
             "gender": genderController,
             "email": emailController.text,
             "phone": phoneController.text,
@@ -156,9 +156,7 @@ class _AddRecordState extends State<AddRecord> {
                                   ),
                                 ),
                             ),
-                            onPressed: () async {
-                              
-                          },
+                            onPressed: sendRecordData,
                         ),
                       ),
                   ],
