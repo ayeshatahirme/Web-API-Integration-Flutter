@@ -98,14 +98,14 @@ Widget build(BuildContext context) {
                     ),
                     Padding(padding: EdgeInsets.all(1.0),
                     ),
-                    Text('Scooby Doo',
+                    Text('Ayesha Tahir',
                     style: TextStyle(
                       height: 2,
                       color: Colors.white,
                       fontSize: 16,
                     )
                     ),
-                    Text('scoobydoo@gmail.com',
+                    Text('ayeshatahirme@gmail.com',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 14,
